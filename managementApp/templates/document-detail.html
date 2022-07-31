@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    #header {
+        text-align: center;
+    }
+    #header .title {
+        text-transform: uppercase;
+    }
+    #header hr {
+        width: 80%;
+    }
+    #title {
+        display: block;
+        text-align: center;
+        font-size: 16px;
+        text-transform: uppercase;
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+    #date {
+        padding-bottom: 50px;
+    }
+    #content {
+
+        text-align: justify;
+    }
+    #marked {
+        text-decoration: underline;
+    }
+    #confirmed {
+        text-align: center;
+
+    }
+    #confirmed img {
+
+        width: 25%;
+        position: absolute;
+        top: 550px;
+        left: 35%;
+    }
+    #confirmed #director, #confirmed #director-data {
+        display: inline-block;
+    }
+    #confirmed #director {
+        position: absolute;
+        top: 610px;
+        left: 150px;
+    }
+    #confirmed #director-data {
+        position: absolute;
+        top: 610px;
+        right: 150px;
+    }
+    #main {
+        padding: 150px 0;
+    }
+</style>
+<body>
+
+    <div id="header">
+        <p class="title">ГККП Алматинский экономический колледж</p>
+        <hr>
+        <p>г. Алматы, ул. Гоголя 124, 11111, тел. 111-11-11</p>
+    </div>
+    <div id="main">
+        <strong id="title">Справка</strong>
+        <strong id="date">{{ student.queryDate|date:"d.m.Y" }}</strong>
+        <p id="content"><b id="marked">{{ student.firstName }} {{ student.lastName }}</b> dolor sit amet, group <b id="marked">{{ student.group }}</b> adipisicing elit. Accusamus, animi assumenda corporis dicta, distinctio, eligendi illo natus nihil pariatur quaerat qui quisquam ratione reprehenderit sapiente similique tenetur veritatis voluptatum! Asperiores? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium assumenda, cum cumque ducimus enim esse facere id illo laboriosam, laborum pariatur perspiciatis quidem repellendus saepe soluta, temporibus tenetur veritatis voluptas?</p>
+    </div>
+    <div id="confirmed">
+        <p id="director">Директор</p>
+        <img src="https://pdfsign.ru/image/design/sign.jpg" alt="">
+        <p id="director-data">Фамилия И.О.</p>
+    </div>
+
+</body>
+</html>
